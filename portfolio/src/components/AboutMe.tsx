@@ -1,22 +1,28 @@
-// MyFunctionalComponent.tsx
-import { directive } from '@babel/types';
 import React from 'react';
 import meIMG from '../img/aboutMe.jpg'
+import bgIMG from '../img/AboutMeBG.jpg'
 interface AboutMeProps {
   lang: string;
 }
 
 const AboutMe: React.FC<AboutMeProps> = ({ lang }) => {
-  if (lang=="en"){
+  if (lang==="en"){
     return (
     <div id='about' className='AboutMe'>
-      <div className='Flex-row'>
-        <img className="AboutMe-img" src={meIMG} alt="" />
-        <div className='AboutMe-content'>
-          <p className='AboutMe-item'>
-          <h1  className='Title'>About Me</h1>
-          I am a Master's (MSc) student at the IT University in Copenhagen, where I  am studying Computer Science. Here, I plan to specialize in Information  Security, as the ongoing battle between IT defense and attacks  fascinates me. Before my Master's, I was a student at Roskilde  University, where I pursued a Bachelor's (BSc) degree in Computer  Science and Informatics. Throughout my education, I have strived to  exceed my goals by taking on as much responsibility as possible. I have  worked as a teaching assistant and research assistant, which has opened  up opportunities such as a work/study trip to Croatia, where I  participated in a summer school for Ph.D. students in resource  management in computer science. I am very accustomed to group work, as  it is the primary work format at RUC, and I can quickly adapt to various  group dynamics and work structures.
-          </p>
+      <div className='AboutMe-bg-img'>
+        <img src={meIMG} alt="" />
+      </div>
+      <div className='AboutMe-child'>
+        <div className='shadowed-div'>
+          <div className='Flex-row'>
+            <img className="AboutMe-img" src={meIMG} alt="" />
+            <div className='AboutMe-content'>
+              <p className='AboutMe-item'>
+              <h1  className='Title'>About Me</h1>
+              I am a Master's (MSc) student at the IT University in Copenhagen, where I  am studying Computer Science. Here, I plan to specialize in Information  Security, as the ongoing battle between IT defense and attacks  fascinates me. Before my Master's, I was a student at Roskilde  University, where I pursued a Bachelor's (BSc) degree in Computer  Science and Informatics. Throughout my education, I have strived to  exceed my goals by taking on as much responsibility as possible. I have  worked as a teaching assistant and research assistant, which has opened  up opportunities such as a work/study trip to Croatia, where I  participated in a summer school for Ph.D. students in resource  management in computer science. I am very accustomed to group work, as  it is the primary work format at RUC, and I can quickly adapt to various  group dynamics and work structures.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

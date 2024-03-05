@@ -1,11 +1,4 @@
-// MyFunctionalComponent.tsx
-import { directive } from '@babel/types';
 import React from 'react';
-import ProjectsHeader from './ProjectsHeader';
-
-// import energyPDF from '../pdf/HW_SW_energy';
-// import slashPDF from '../pdf/slash_report'
-// import cubePDF from '../pdf/Cube_report'
 
 import boltIMG from '../img/bolt.jpg'
 import cubeIMG from '../img/rubix-cube.png'
@@ -17,11 +10,10 @@ interface ProjectsProps {
 }
 
 const Projects: React.FC<ProjectsProps> = ({ lang }) => {
-  if (lang=="en"){
+  if (lang==="en"){
     return (
     <div id='projects' className='Projects'>
       <h1 className='Title'>Projects</h1>
-      {/* <ProjectsHeader lang={lang}/> */}
       <ul className='Projects-list'>
         <li id='slash' className='Project-item'>
             <img className='Project-img' src={slashIMG} alt="Slash img"/>

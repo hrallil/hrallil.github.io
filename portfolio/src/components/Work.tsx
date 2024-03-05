@@ -1,5 +1,3 @@
-// MyFunctionalComponent.tsx
-import { directive } from '@babel/types';
 import React from 'react';
 
 interface WorkProps {
@@ -7,7 +5,7 @@ interface WorkProps {
 }
 
 const Work: React.FC<WorkProps> = ({ lang }) => {
-  if (lang=="en"){
+  if (lang==="en"){
     return (
     <div className='Work'>
       <h1 id='work' className='Title'>Work experience</h1>

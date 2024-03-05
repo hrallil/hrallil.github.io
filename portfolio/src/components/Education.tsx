@@ -1,5 +1,3 @@
-// MyFunctionalComponent.tsx
-import { directive } from '@babel/types';
 import React from 'react';
 
 interface EducationProps {
@@ -7,7 +5,7 @@ interface EducationProps {
 }
 
 const Education: React.FC<EducationProps> = ({ lang }) => {
-  if (lang=="en"){
+  if (lang==="en"){
     return (
     <div className='educations'>
       <h1 id='education' className='Title'>Formal education</h1>

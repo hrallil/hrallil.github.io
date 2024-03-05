@@ -1,7 +1,3 @@
-// MyFunctionalComponent.tsx
-import { directive } from '@babel/types';
-import React from 'react';
-
 import upIMG from '../img/up.png'
 
 

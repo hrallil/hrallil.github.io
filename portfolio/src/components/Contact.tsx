@@ -1,5 +1,3 @@
-// MyFunctionalComponent.tsx
-import { directive } from '@babel/types';
 import React from 'react';
 
 interface ContactProps {
@@ -10,7 +8,7 @@ const linkedin = "https://www.linkedin.com/in/mathias-ruc-larsen/"
 const phone = "20768029"
 const git = "https://github.com/hrallil"
 const Contact: React.FC<ContactProps> = ({ lang }) => {
-  if (lang=="en"){
+  if (lang==="en"){
     return (
     <div className='Contact'>
       <h1 id='contact' className='Title'>Contact me</h1>
