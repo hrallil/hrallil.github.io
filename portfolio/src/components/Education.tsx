@@ -10,7 +10,7 @@ const Education: React.FC<EducationProps> = ({ lang }) => {
   if (lang=="en"){
     return (
     <div className='educations'>
-      <h1 id='education' className='title'>Formal education</h1>
+      <h1 id='education' className='Title'>Formal education</h1>
       <ul>
         <li>
             <h3>
@@ -80,8 +80,8 @@ const Education: React.FC<EducationProps> = ({ lang }) => {
     }
   else{
     return (
-    <div className='educations'>
-      <h1 id='education' className='title'>Udannelse</h1>
+    <div className='Educations'>
+      <h1 id='education' className='Title'>Udannelse</h1>
       <p>hej mit navn er mathias</p>
     </div>);
   }

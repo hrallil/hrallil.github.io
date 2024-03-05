@@ -12,8 +12,8 @@ const git = "https://github.com/hrallil"
 const Contact: React.FC<ContactProps> = ({ lang }) => {
   if (lang=="en"){
     return (
-    <div className='contact'>
-      <h1 id='contact' className='title'>Contact me</h1>
+    <div className='Contact'>
+      <h1 id='contact' className='Title'>Contact me</h1>
       <p>Email: {email}</p>
       <p>LinkedIn: <a href={linkedin}>{linkedin}</a></p>
       <p>github: <a href={git}>{git}</a></p>
@@ -24,8 +24,8 @@ const Contact: React.FC<ContactProps> = ({ lang }) => {
     }
   else{
     return (
-    <div className='contact'>
-      <h1 id='contact' className='title'>Kontakt mig</h1>
+    <div className='Contact'>
+      <h1 id='contact' className='Title'>Kontakt mig</h1>
       <p>Email: {email}</p>
       <p>LinkedIn: <a href={linkedin}>{linkedin}</a></p>
       <p>github: <a href={git}>{git}</a></p>

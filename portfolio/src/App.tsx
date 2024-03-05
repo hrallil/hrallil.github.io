@@ -6,22 +6,23 @@ import Education from './components/Education';
 import Work from './components/Work';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import ToTop from './components/ToTop';
 
 const lang = "en"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header id='header' className="App-header">
         <h1>Mathias Larsen</h1>
         <p> MSc in Computer Science</p>
         <div >
           <ul className='Header-container'>
             <li className='Header-element'>
-              <a className='App-link' href="#projects">Projects</a>    
+              <a className='App-link' href="#about">About me</a>    
             </li>
             <li className='Header-element'>
-              <a className='App-link' href="#about">About me</a>    
+              <a className='App-link' href="#projects">Projects</a>    
             </li>
             <li className='Header-element'>
               <a className='App-link' href="#education">Education</a>    
@@ -36,6 +37,7 @@ function App() {
         </div>
       </header>
       <main className='App-main'>
+        <ToTop/>
         <AboutMe lang={lang} />
         <Projects lang={lang} />
         <Education lang={lang} />

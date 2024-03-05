@@ -9,8 +9,8 @@ interface WorkProps {
 const Work: React.FC<WorkProps> = ({ lang }) => {
   if (lang=="en"){
     return (
-    <div className='work'>
-      <h1 id='work' className='title'>Work experience</h1>
+    <div className='Work'>
+      <h1 id='work' className='Title'>Work experience</h1>
       <ul>
         <li>
             <h3>Karla</h3>
@@ -33,11 +33,23 @@ const Work: React.FC<WorkProps> = ({ lang }) => {
         </li>
         <li>
             <h3>Research assistant</h3>
-            <div>Sometext describing how i worked for karla</div>
+            <div>During my time as a research assistant in the project "Energy-efficiency of software and hardware
+              algorithms", my main responsabilities were to take measurements of the different algorithms and advicate which parameters might be interesting to look into further. 
+
+              During the project a range of algorithms were tested for both in software and hardware, where the prior was measured on a raspberry pi (programmed in C) and the latter was measured on a Field-programmable Gate Array (FPGA) (programmed in Chisel). 
+
+              My work in the project was hybrid, where the measurements were taken on site at Roskilde University, and the findings were reported back to the researchers through online mediums such as github (https://github.com/FPGA-Energy) and slack.
+            </div>
         </li>
         <li>
             <h3>Teaching assistant</h3>
-            <div>Sometext describing how i worked for karla</div>
+            <div>
+            As a teachings assistant of the first basis course in empirical data, my responsibilities were to help and guide roughly 40 students through the assignments given to them by the lecture of the course. 
+
+            The course consisted of the investigation of data and how to display data by the usage of python 3.8 as a tool. Here the libraries used were Numpy, Matplotlib, and pandas through the environment Jupiter notebook. 
+
+            For more information on the course, go to: <a href="https://study.ruc.dk/class/view/24107">https://study.ruc.dk/class/view/24107</a>
+            </div>
         </li>
       </ul>
     </div>
@@ -45,8 +57,8 @@ const Work: React.FC<WorkProps> = ({ lang }) => {
     }
   else{
     return (
-    <div className='work'>
-      <h1 id='work' className='title'>Arbejds erfaringer</h1>
+    <div className='Work'>
+      <h1 id='work' className='Title'>Arbejds erfaringer</h1>
       <ul>
         <li></li>
         <li></li>
