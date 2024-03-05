@@ -1,16 +1,15 @@
 {
   "files": {
     "main.css": "/hrallil.github.io/static/css/main.f855e6bc.css",
-    "main.js": "/hrallil.github.io/static/js/main.aabb1bf3.js",
+    "main.js": "/hrallil.github.io/static/js/main.acee4970.js",
     "static/js/453.1407b060.chunk.js": "/hrallil.github.io/static/js/453.1407b060.chunk.js",
-    "static/media/logo.svg": "/hrallil.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/hrallil.github.io/index.html",
     "main.f855e6bc.css.map": "/hrallil.github.io/static/css/main.f855e6bc.css.map",
-    "main.aabb1bf3.js.map": "/hrallil.github.io/static/js/main.aabb1bf3.js.map",
+    "main.acee4970.js.map": "/hrallil.github.io/static/js/main.acee4970.js.map",
     "453.1407b060.chunk.js.map": "/hrallil.github.io/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.aabb1bf3.js"
+    "static/js/main.acee4970.js"
   ]
 }
