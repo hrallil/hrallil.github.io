@@ -5,35 +5,17 @@ import Work from './components/Work';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ToTop from './components/ToTop';
+import Header from './components/Header';
+import BackgroundIMG from './components/BackgroundIMG';
+import bgIMG from './img/bg/BG.jpg'
 
 const lang = "en"
 
 function App() {
   return (
     <div className="App">
-      <header id='header' className="App-header">
-        <h1>Mathias Larsen</h1>
-        <p> MSc in Computer Science</p>
-        <div >
-          <ul className='Header-container'>
-            <li className='Header-element'>
-              <a className='App-link' href="#about">About me</a>    
-            </li>
-            <li className='Header-element'>
-              <a className='App-link' href="#projects">Projects</a>    
-            </li>
-            <li className='Header-element'>
-              <a className='App-link' href="#education">Education</a>    
-            </li>
-            <li className='Header-element'>
-              <a className='App-link' href="#work">Work experience</a>   
-            </li>
-            <li className='Header-element'>
-              <a className='App-link' href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </header>
+      
+      <Header lang={lang}/>
       <main className='App-main'>
         <ToTop/>
         <AboutMe lang={lang} />

@@ -1,6 +1,8 @@
 import React from 'react';
 import meIMG from '../img/aboutMe.jpg'
-import bgIMG from '../img/AboutMeBG.jpg'
+import bgIMG from '../img/bg/AboutMeBG.jpg'
+
+import BackgroundIMG from './BackgroundIMG';
 interface AboutMeProps {
   lang: string;
 }
@@ -9,10 +11,11 @@ const AboutMe: React.FC<AboutMeProps> = ({ lang }) => {
   if (lang==="en"){
     return (
     <div id='about' className='AboutMe'>
-      <div className='AboutMe-bg-img'>
+      <BackgroundIMG img={bgIMG} />
+      {/* <div className='AboutMe-bg-img'>
         <img src={meIMG} alt="" />
-      </div>
-      <div className='AboutMe-child'>
+      </div> */}
+            <div className='AboutMe-child'>
         <div className='shadowed-div'>
           <div className='Flex-row'>
             <img className="AboutMe-img" src={meIMG} alt="" />
@@ -23,7 +26,7 @@ const AboutMe: React.FC<AboutMeProps> = ({ lang }) => {
               </p>
             </div>
           </div>
-        </div>
+        </div>  
       </div>
     </div>
   );
